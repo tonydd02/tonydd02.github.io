@@ -273,41 +273,43 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+    float: left;
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 35px 25px;
     cursor: pointer;
+    transform-style: preserve-3d;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: url("images/banner.jpg") no-repeat center;
+    transform: rotateY(180deg);
 }
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
+.services .serv-content .card .front{
+    position: relative;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
+.services .serv-content .card .back{
+    position: fixed;
+    top:30%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transform: rotateY(180deg);
 }
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
 }
 .services .serv-content .card .text{
     font-size: 25px;
     color: #f0f;
     font-weight: 500;
-    margin: 10px 0 7px 0;
 }
 .services .serv-content .card .subtext{
     font-size: 15px;
     color: #fff;
     font-weight: 500;
-    margin: 10px 0 7px 0;
 }
 
 /* skills section styling */
