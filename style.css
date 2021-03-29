@@ -1,4 +1,3 @@
-/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -11,7 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -26,7 +24,6 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -35,11 +32,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -257,21 +254,21 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* projects section styling */
+.projects, .teams{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.projects .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.projects .title::after,
 .teams .title::after{
     background: #111;
     content: "what i did";
 }
-.services .serv-content .card{
+.projects .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -281,31 +278,31 @@ section .title::after{
     transform-style: preserve-3d;
     transition: all 0.5s ease;
 }
-.services .serv-content .card:hover{
+.projects .serv-content .card:hover{
     transform: rotateY(180deg);
 }
-.services .serv-content .card .front{
+.projects .serv-content .card .front{
     position: relative;
     backface-visibility: hidden;
     overflow: hidden;
 }
-.services .serv-content .card .back{
+.projects .serv-content .card .back{
     position: absolute;
     top:25%;
     backface-visibility: hidden;
     overflow: hidden;
     transform: rotateY(180deg);
 }
-.services .serv-content .card i{
+.projects .serv-content .card i{
     font-size: 50px;
     color: crimson;
 }
-.services .serv-content .card .text{
+.projects .serv-content .card .text{
     font-size: 25px;
     color: #f0f;
     font-weight: 500;
 }
-.services .serv-content .card .subtext{
+.projects .serv-content .card .subtext{
     font-size: 15px;
     color: #fff;
     font-weight: 500;
@@ -559,8 +556,6 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-
-/* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -627,7 +622,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -651,7 +646,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .projects .serv-content .card{
         width: 100%;
     }
 }
