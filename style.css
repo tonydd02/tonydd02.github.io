@@ -273,14 +273,13 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    float: left;
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 35px 25px;
     cursor: pointer;
     transform-style: preserve-3d;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .services .serv-content .card:hover{
     transform: rotateY(180deg);
@@ -291,8 +290,8 @@ section .title::after{
     overflow: hidden;
 }
 .services .serv-content .card .back{
-    position: fixed;
-    top:30%;
+    position: absolute;
+    top:25%;
     backface-visibility: hidden;
     overflow: hidden;
     transform: rotateY(180deg);
@@ -389,7 +388,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "place holder";
 }
 .teams .carousel .card{
     background: #222;

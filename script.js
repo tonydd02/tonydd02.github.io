@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["UCLA CS Major", "Enthusiastic Learner", "PUBGer", "Person-to-hire"],
+        strings: ["Quick Learner", "Creative Thinker", "Nice Partner"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
