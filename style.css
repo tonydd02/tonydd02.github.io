@@ -218,7 +218,7 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
+    height: 480px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
@@ -412,6 +412,12 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fff;
+}
+.teams .carousel .card .subtext{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
 }
 .teams .carousel .card img{
     height: 150px;
