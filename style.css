@@ -6,6 +6,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -32,8 +41,9 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .courses, .contact, footer{
     font-family: 'Poppins', sans-serif;
+    background:#fff;
 }
 .about .about-content,
 .projects .serv-content,
@@ -162,7 +172,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: #AARRGGBB;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -212,7 +222,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "what i like";
+    content: "who i am";
 }
 .about .about-content .left{
     width: 45%;
@@ -255,16 +265,16 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects, .teams{
+.projects, .courses{
     color:#fff;
     background: #111;
 }
 .projects .title::before,
-.teams .title::before{
+.courses .title::before{
     background: #fff;
 }
 .projects .title::after,
-.teams .title::after{
+.courses .title::after{
     background: #111;
     content: "what i did";
 }
@@ -367,27 +377,33 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills-content .right .html::before{
+.skills-content .right .full::before{
+    width: 100%;
+}
+.skills-content .right .nine::before{
     width: 90%;
 }
-.skills-content .right .java::before{
-    width: 70%;
+.skills-content .right .eightyfive::before{
+    width: 85%;
 }
-.skills-content .right .js::before{
+.skills-content .right .eight::before{
     width: 80%;
 }
-.skills-content .right .c::before{
-    width: 90%;
+.skills-content .right .seven::before{
+    width: 70%;
 }
-.skills-content .right .python::before{
-    width: 90%;
+.skills-content .right .six::before{
+    width: 60%;
+}
+.skills-content .right .five::before{
+    width: 50%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "place holder";
+/* courses section styling */
+.courses .title::after{
+    content: "4.0 GPA";
 }
-.teams .carousel .card{
+.courses .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -395,31 +411,31 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.courses .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.courses .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.courses .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.courses .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: #fff;
 }
-.teams .carousel .card .subtext{
+.courses .carousel .card .subtext{
     font-size: 15px;
     font-weight: 500;
     color: #fff;
 }
-.teams .carousel .card img{
+.courses .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -427,7 +443,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.courses .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -438,7 +454,7 @@ section .title::after{
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
+    out : none!important;
     border-radius: 50%;
     border: 2px solid crimson!important;
     transition: all 0.3s ease;
