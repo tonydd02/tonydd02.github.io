@@ -401,7 +401,7 @@ section .title::after{
 
 /* courses section styling */
 .courses .title::after{
-    content: "4.0 GPA";
+    content: "3.97/4.0 GPA";
 }
 .courses .carousel .card{
     background: #222;
